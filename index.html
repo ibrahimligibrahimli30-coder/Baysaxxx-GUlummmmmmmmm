@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Barışaxxxxx 🤍</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 40px;
+            background-image: url('fon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        h1, h2 {
+            text-shadow: 2px 2px 5px black;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #yazi, #sekil, #barisBtn {
+            display: none;
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 8px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Küsmüşük amma barışaq 🥺🤍</h1>
+
+    <button onclick="yaziAc()">Mənə bir söz yaz</button>
+
+    <div id="yazi">
+        <input type="text" id="metn" placeholder="Ürəyindən keçəni yaz..." />
+        <br><br>
+        <button onclick="goster()">Göndər</button>
+    </div>
+
+    <h2 id="ekranMetni"></h2>
+
+    <button id="barisBtn" onclick="sekilAc()">Barışmadıqsaaaa buraya basssss 🤍</button>
+
+    <div id="sekil">
+        <img src="sekil.jpg" alt="Biz 🤍">
+    </div>
+
+    <script>
+        function yaziAc() {
+            document.getElementById("yazi").style.display = "block";
+        }
+
+        function goster() {
+            let metn = document.getElementById("metn").value;
+            document.getElementById("ekranMetni").innerText = metn;
+            document.getElementById("barisBtn").style.display = "block";
+        }
+
+        function sekilAc() {
+            document.getElementById("sekil").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
